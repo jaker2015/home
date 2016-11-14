@@ -1,0 +1,168 @@
+body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol,
+li, dl, dt, dd, form, a, fieldset, input, th, td
+{margin: 0; padding: 0; border: 0; outline: none;}
+html,body{line-height: 1;height: 100%;font-family:"microsoft yahei";overflow: hidden;}
+ul, ol{list-style: none;}
+a{color: black;text-decoration: none;}
+a:hover{text-decoration: underline;}
+.floatLeft{float: left;padding: .5em .5em .5em 0;}
+.floatRight{float: right;padding: .5em 0 .5em .5em;}
+.clear{clear: both;height: 0;}
+canvas,.life ,.content_wrap,.addCity,.hotcity{display: none;}
+canvas{position: fixed;z-index: 1;}
+#cloud{position: fixed;z-index: 0;width: 100%;height: 100%;overflow: hidden;}
+
+.cloud1,.cloud2,.cloud3{
+	position: absolute;
+	z-index: 1;
+	top: 40%;
+	right: 15%;
+	background: url(../images/cloud2.png) no-repeat no-repeat center;
+	height: 121px;
+	width: 428px;
+	opacity: .5;
+	-webkit-animation: cloudLarge 105s infinite;
+	-moz-animation: cloudLarge 105s infinite;
+	-o-animation: cloudLarge 105s infinite;
+	animation: cloudLarge 105s infinite;
+}
+.cloud2{
+	top: 80%;
+	right: 50%;
+	height: 89px;
+	width: 177px;
+	opacity: .3;
+	background: url(../images/cloud1.png) no-repeat no-repeat center;
+	-webkit-animation: cloudLarge2 155s infinite;
+	-moz-animation: cloudLarge2 155s infinite;
+	-o-animation: cloudLarge2 155s infinite;
+	animation: cloudLarge2 155s infinite;
+}
+.cloud3{
+	top: 5%;
+	right: 0;
+	height: 123px;
+	width: 800px;
+	opacity: 1;
+	background: url(../images/yin.png) no-repeat no-repeat center;
+	-webkit-animation: cloudLarge3 105s infinite;
+	-moz-animation: cloudLarge3 105s infinite;
+	-o-animation: cloudLarge3 105s infinite;
+	animation: cloudLarge3 105s infinite;
+}
+.darkClouds{
+    background:-moz-linear-gradient(top, #809aab 70%,#5192c1 100%);
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#083a8e), color-stop(100%,#0586e4));
+    background:-webkit-linear-gradient(top, #809aab 70%,#5192c1 100%);
+    background:-o-linear-gradient(top, #809aab 70%,#5192c1 100%);
+    background:-ms-linear-gradient(top, #809aab 70%,#5192c1 100%);
+    background:linear-gradient(to bottom, #809aab 70%,#5192c1 100%);
+    }
+
+.content_wrap{  left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 3;}
+
+
+
+/**/
+@-webkit-keyframes cloudLarge {
+ 0% {
+ right: -50%;
+}
+ 100% {
+ right: 100%;
+}
+}
+ @-moz-keyframes cloudLarge {
+ 0% {
+ right: -50%;
+}
+ 100% {
+ right: 100%;
+}
+}
+ @-o-keyframes cloudLarge {
+ 0% {
+ right: -50%;
+}
+ 100% {
+ right: 100%;
+}
+}
+ @keyframes cloudLarge {
+ 0% {
+ right: -50%;
+}
+ 100% {
+ right: 100%;
+}
+}
+
+@-webkit-keyframes cloudLarge2 {
+ 0% {
+ right: -20%;
+}
+ 100% {
+ right: 100%;
+}
+}
+ @-moz-keyframes cloudLarge2 {
+ 0% {
+ right: -20%;
+}
+ 100% {
+ right: 100%;
+}
+}
+ @-o-keyframes cloudLarge2 {
+ 0% {
+ right: -20%;
+}
+ 100% {
+ right: 100%;
+}
+}
+ @keyframes cloudLarge2 {
+ 0% {
+ right: -20%;
+}
+ 100% {
+ right: 100%;
+}
+}
+
+
+@-webkit-keyframes cloudLarge3 {
+ 0% {
+ right: -100%;
+}
+ 100% {
+ right: 100%;
+}
+}
+ @-moz-keyframes cloudLarge3 {
+ 0% {
+ right: -100%;
+}
+ 100% {
+ right: 100%;
+}
+}
+ @-o-keyframes cloudLarge3 {
+ 0% {
+ right: -100%;
+}
+ 100% {
+ right: 100%;
+}
+}
+ @keyframes cloudLarge3 {
+ 0% {
+ right: -100%;
+}
+ 100% {
+ right: 100%;
+}
+}
